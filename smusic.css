@@ -31,7 +31,6 @@ header,footer,section,article,aside,nav,address,figure,figcaption,menu,details{d
 .f-ti{overflow:hidden;text-indent:-30000px;}
 .f-lhn{line-height:normal;}
 .f-toe{overflow:hidden;word-wrap:normal!important;white-space:nowrap;text-overflow:ellipsis;}
-.f-usn{-webkit-user-select:none;user-select:none;}
 .f-bsb{-webkit-box-sizing:border-box;box-sizing:border-box;}
 .f-cp{cursor: pointer}
 
@@ -40,79 +39,31 @@ header,footer,section,article,aside,nav,address,figure,figcaption,menu,details{d
 ::-webkit-scrollbar-button:vertical{display:none}
 ::-webkit-scrollbar-track:vertical{background-color:transparent;}
 ::-webkit-scrollbar-track-piece{background-color:transparent;}
-::-webkit-scrollbar-thumb:vertical{background-color:#3792ef;border-radius:6px}
+::-webkit-scrollbar-thumb:vertical{background-color:#432821;border-radius:6px}
 ::-webkit-scrollbar-thumb:vertical:hover,
-::-webkit-scrollbar-thumb:vertical:active {background-color: #2e86ef}
+::-webkit-scrollbar-thumb:vertical:active {background-color: #432821}
 
 html,body{
     width: 100%;
     height: 100%;
-    background-color: #3792ef;
+    background-color: #432821;
     overflow: hidden;
     font-family: "Microsoft Yahei","微软雅黑","Helvetica Neue","Hiragino Sans GB",Helvetica,Tahoma,sans-serif;
 }
 
 /*SMusic*/
 .grid-music-container{
-    width: 520px;
-    height: 276px;
+    width: 240px;
+    height: 445px;
     padding: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -158px;
-    margin-left: -280px;
-    background-color: rgba(255,255,255,.7);
+    margin-top: -280px;
+    margin-left: -140px;
+    background-color: rgba(255,255,255,.3);
     font-family: "Microsoft Yahei","微软雅黑","Helvetica Neue","Hiragino Sans GB",Helvetica,Tahoma,sans-serif;
-    text-shadow: 1px 0 0 rgba(255,255,255,.7);
 }
-
-.grid-music-container .m-music-play-wrap{
-    height: 150px;
-    position: relative;
-    padding-left: 140px;
-}
-.grid-music-container .u-cover{
-    width: 121px;
-    height: 121px;
-    overflow: hidden;
-    background: url(../img/music_icons.png) 0 0 no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.grid-music-container .u-cover img{
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: 100%;
-    border-radius: 50%;
-}
-.grid-music-container .u-cover.play{
-    -webkit-animation: Circle 10s linear infinite 0s forwards;
-    animation: Circle 10s linear infinite 0s forwards;
-}
-.grid-music-container .u-cover.paused{
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
-}
-@-webkit-keyframes Circle {
-    from{
-        -webkit-transform: rotate(0deg);
-    }
-    to{
-        -webkit-transform: rotate(360deg);
-    }
-}
-@keyframes Circle {
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
-
 .grid-music-container .m-now-info{
     height: 100%;
 }
@@ -120,17 +71,16 @@ html,body{
     font-weight: normal;
 }
 .grid-music-container .m-now-info h1 strong{
-    font-size: 18px;
-    color: #111210;
-    font-weight: normal;
+    font-size: 15px;
+    color: #C59D6C;
 }
 .grid-music-container .m-now-info h1 small{
     margin-left: 20px;
-    font-size: 14px;
-    color: #313230;
+    font-size: 15px;
+    color: #C59D6C;
 }
 .grid-music-container .m-now-controls{
-    padding-top: 30px;
+    padding-top: 5px;
     position: relative;
 }
 .grid-music-container .m-now-controls .u-control{
@@ -140,7 +90,7 @@ html,body{
     overflow: hidden;
 }
 .grid-music-container .m-now-controls .u-process{
-    width: 220px;
+    width: 130px;
     height: 4px;
     position: relative;
     background-color: #cecfd4;
@@ -152,7 +102,7 @@ html,body{
     position: absolute;
     top:0;
     left: 0;
-    background-color: #3792ef;
+    background-color: #FF6C00;
     z-index: 1;
 }
 .grid-music-container .m-now-controls .u-process .buffer-process{
@@ -160,15 +110,15 @@ html,body{
     background-color: #c1c2c0;
 }
 .grid-music-container .m-now-controls .u-time{
-    margin-left: 10px;
+    margin-left: 7px;
     font-size: 12px;
-    color: #585957;
+    color: #CECFD4;
 }
 .grid-music-container .m-now-controls .u-volume{
     overflow: visible;
     text-align: center;
     position: relative;
-    margin-left: 20px;
+    margin-left: 2px;
 }
 .grid-music-container .u-volume .volume-process{
     width: 3px;
@@ -188,7 +138,7 @@ html,body{
     display: inline-block;
     width: 3px;
     height: 50%;
-    background-color: #3792ef;
+    background-color: #432821;
     position: absolute;
     left: 0;
     bottom:0;
@@ -238,9 +188,9 @@ html,body{
     background-position: -158px -98px;
 }
 .grid-music-container .m-music-list-wrap{
-    margin-left: 135px;
-    margin-right: 25px;
-    height: 120px;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
     border: 1px solid rgba(255,255,255,.7);
     overflow-x: hidden;
     overflow-y: auto;
@@ -251,16 +201,15 @@ html,body{
     line-height: 30px;
     padding: 0 10px;
     cursor: pointer;
-    color: #383937;
-    font-size: 14px;
+    color: #C69E6D;
+    font-size: 15px;
 }
 .grid-music-container .m-music-list-wrap li strong{
-    font-size: 16px;
-    font-weight: normal;
+    font-size: 15px;
 }
 .grid-music-container .m-music-list-wrap li:hover,.grid-music-container .m-music-list-wrap li.current{
     background-color: rgba(255,255,255,.7);
-    color: #3792ef;
+    color: #FF6C00;
 }
 .grid-music-container .m-music-list-wrap li.current{
     background-color: transparent;
@@ -307,11 +256,11 @@ html,body{
 .u-play-btn.mode{
     width: 20px!important;
     height: 18px!important;
-    margin-right: 10px!important;
+    margin-right: 2px!important;
 }
 .u-play-btn.mode-list{
     background-position: -181px -98px;
-    margin-left: 65px;
+    margin-left: 5px;
 }
 .u-play-btn.mode-list.current{
     background-position: -221px -98px;
